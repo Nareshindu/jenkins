@@ -18,7 +18,7 @@ pipeline {
         stage('Naresh') {
             steps {
               echo 'Hello Naresh'
-                    error
+              error 'pipeline failed'
             }
         }
     }
