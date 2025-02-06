@@ -2,7 +2,6 @@ pipeline {
     agent any
     stages {
         stage('NareshIndu') {
-        agent {
             node {
                 label 'jenkins-agent-1'
             }
@@ -10,27 +9,5 @@ pipeline {
                 echo 'naresh hello say to jenkins'
             }
         }        
-        stage('Naresh') {
-            steps {
-                echo 'This stage will be executed first.'
-            }
-        }
-        stage('indu') {
-            steps {
-                echo 'This stage will be executed second.'
-            }
-        }
-        stage('myson') {
-            steps {
-                echo 'This stage will be executed second.'
-            }
-        }
-                stage('myson143') {
-            steps {
-                echo 'This stage will be executed second.'
-            }
-        }
-
     }    
 }
-
