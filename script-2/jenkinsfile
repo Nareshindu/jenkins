@@ -1,0 +1,10 @@
+pipeline {
+    stages {
+        stage('Naresh') {
+            // node {
+            //     label 'jenkins-agent-1'
+            sh echo 'hello Naresh Naidu'
+            }
+        }
+    }
+}
