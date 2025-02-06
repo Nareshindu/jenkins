@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        agent {
+    node {
+        label 'jenkins-agent-1'
+    }
+}
         stage('Naresh') {
             steps {
                 echo 'This stage will be executed first.'
@@ -21,6 +26,7 @@ pipeline {
                 echo 'This stage will be executed second.'
             }
         }
+
     }    
 }
 
