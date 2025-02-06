@@ -1,10 +1,32 @@
+// pipeline {
+//     stages {
+//         stage('Naresh') {
+//             steps {
+//                 sh echo 'hello Naresh Naidu'
+//             }
+//             }
+//         }
+//     }
+// }
+
 pipeline {
+    agent any
     stages {
         stage('Naresh') {
-            // node {
-            //     label 'jenkins-agent-1'
-            sh echo 'hello Naresh Naidu'
+            steps {
+                 sh echo 'Hello Naresh'
             }
+        }
+    }
+    post {
+        always {
+            echo 'print this'
+        }
+        success {
+            echo 'above mentioned pipeline is success'
+        }
+        falure {
+            echo 'above mentioned pipeline is failure'
         }
     }
 }
