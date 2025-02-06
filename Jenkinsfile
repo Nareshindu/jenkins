@@ -16,7 +16,7 @@ pipeline {
                 echo 'This stage will be executed second.'
             }
         }
-                stage('myson14') {
+                stage('myson1') {
             steps {
                 echo 'This stage will be executed second.'
             }
