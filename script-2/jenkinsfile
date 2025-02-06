@@ -14,10 +14,11 @@ pipeline {
     stages {
         stage('Naresh') {
             steps {
-                 echo 'Hello Naresh'
+                sh echo 'Hello Naresh'
             }
         }
     }
+    
     post {
         always {
             echo 'print this'
