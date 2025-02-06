@@ -11,5 +11,10 @@ pipeline {
                 echo 'This stage will be executed second.'
             }
         }
+        stage('myson') {
+            steps {
+                echo 'This stage will be executed second.'
+            }
+        }
     }    
 }
