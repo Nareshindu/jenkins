@@ -1,15 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('NareshIndu')
+        stage('NareshIndu') {
         agent {
-    node {
-        label 'jenkins-agent-1'
-    }
-    steps {
-        echo 'naresh hello say to jenkins'
-    }
-}
+            node {
+                label 'jenkins-agent-1'
+            }
+            steps {
+                echo 'naresh hello say to jenkins'
+            }
+        }        
         stage('Naresh') {
             steps {
                 echo 'This stage will be executed first.'
