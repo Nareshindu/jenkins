@@ -7,4 +7,11 @@ pipeline {
             }
         }
     }
+    stages {
+        stage('indu') {
+            steps {
+                echo 'This stage will be executed second.'
+            }
+        }
+    }
 }
