@@ -1,9 +1,9 @@
 // pipeline {
+//     agent any
 //     stages {
 //         stage('Naresh') {
 //             steps {
 //                 sh echo 'hello Naresh Naidu'
-//             }
 //             }
 //         }
 //     }
@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Naresh') {
             steps {
-                 sh 'echo Hello Naresh'
+                 echo 'Hello Naresh'
             }
         }
     }
