@@ -23,9 +23,9 @@ pipeline {
     }
     
     post {
-        success {
+        failure {
             echo 'print this'
-            echo 'above mentioned pipeline is success'
+            echo 'above mentioned pipeline is failure'
         }    
         // failure {
         //     echo 'above mentioned pipeline is failure'
