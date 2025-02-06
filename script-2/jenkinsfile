@@ -18,14 +18,13 @@ pipeline {
         stage('Naresh') {
             steps {
               echo 'Hello Naresh'
-              error 'pipeline failed'
             }
         }
     }
     
     post {
-        failure {
-            slackSend channel: 'https://hooks.slack.com/services/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', message: 'This pipeline is failed'
+        success {
+            slackSend channel: 'https://hooks.slack.com/services/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', message: 'This pipeline is success'
         }    
         // failure {
         //     echo 'above mentioned pipeline is failure'
