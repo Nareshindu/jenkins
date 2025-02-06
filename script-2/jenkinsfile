@@ -25,7 +25,7 @@ pipeline {
         success {
             echo 'above mentioned pipeline is success'
         }
-        falure {
+        failure {
             echo 'above mentioned pipeline is failure'
         }
     }
