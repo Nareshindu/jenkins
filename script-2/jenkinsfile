@@ -17,7 +17,8 @@ pipeline {
     stages {
         stage('Naresh') {
             steps {
-              sh echo 'Hello Naresh'
+              echo 'Hello Naresh'
+              error
             }
         }
     }
