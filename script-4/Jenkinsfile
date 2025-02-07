@@ -1,6 +1,7 @@
 pipeline {
     agent {
         label 'Java-node-1'
+        label 'Java-node-2'
     }
     options {
         timeout(time: 100, unit: 'SECONDS')
