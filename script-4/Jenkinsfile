@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    options {
+        timeout(time: 10, unit: 'SECONDS')
+    }
+    stages {
+        stage('NareshNaidu') {
+            steps {
+                sh "echo 'hello naresh'"
+            }
+        }
+    }
+    post {
+        success {
+            echo 'above mentioned pipeline is success'
+        }
+    }
+}
