@@ -8,7 +8,6 @@ pipeline {
         stage('Naresh') {
             steps {
                 echo 'Hello Naresh'
-                error 'try again'
             }
         }
     }
