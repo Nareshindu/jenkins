@@ -14,7 +14,7 @@ pipeline {
     post {
         always {
             echo 'run the above pipeline'
-            deletedir()
+            //deletedir()
         }
         success {
             echo 'above mentioned pipeline is success'
