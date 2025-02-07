@@ -12,6 +12,7 @@ pipeline {
         stage('Naidu') {
             steps {
                 echo 'naidunaresh'
+                error 'nareshindu'
             }
         }    
     }
