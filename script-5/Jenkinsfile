@@ -1,5 +1,5 @@
-pipeline {
-    agent any
+// pipeline {
+//     agent any
 //     parameters {
 //         string(name: 'PERSON', defaultValue: 'Naresh', description: 'To Whom should I say hello?')
 
@@ -27,6 +27,8 @@ pipeline {
 //         }
 
 //     }
+pipeline {
+    agent any
     stages {
         stage('example') {
             input {
@@ -38,7 +40,6 @@ pipeline {
                 }
                 steps {
                     echo "Hello, ${PERSON}, nice to meet you."
-
                 }
 
             }
