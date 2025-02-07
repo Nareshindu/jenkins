@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Naidu') {
             steps {
-                echo 'naidu naresh'
+                echo 'naidunaresh'
             }
         }    
     }
