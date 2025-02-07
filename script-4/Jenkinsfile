@@ -9,10 +9,11 @@ pipeline {
                 echo 'hello naresh'
             }
         }
-        stage('Naidu')
+        stage('Naidu') {
             steps {
                 echo 'naidu naresh'
             }
+        }    
     }
     post {
         success {
