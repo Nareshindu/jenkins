@@ -2,7 +2,7 @@ pipeline {
     agent any
     options {
         timeout(time: 100, unit: 'SECONDS')
-        retry(2)
+        //retry(2)
     }
     stages {
         stage('Naresh') {
