@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+    options {
+        timeout(time: 100, unit: SECONDS)
+        retry(2)
+    }
+    stages {
+        stage('Naresh') {
+            steps {
+                echo 'Hello Naresh'
+                error 'try again'
+            }
+        }
+    }
+    post {
+        always {
+            echo 'run the above pipeline'
+            deletedir()
+        }
+        success {
+            echo 'above mentioned pipeline is success'
+        }
+        failure {
+            echo 'above mentioned pipeline is failure'
+        }
+    }
+}
